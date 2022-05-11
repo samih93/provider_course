@@ -100,8 +100,8 @@ class HomePage extends StatelessWidget {
               return MaterialButton(
                 onPressed: () {
                   model.addStudent("ali");
-                  model.addStudent("samih");
-                  model.addStudent("ahmad");
+                  //model.addStudent("samih");
+                  //  model.addStudent("ahmad");
                 },
                 color: Colors.blue,
                 child: Text("Add Student"),

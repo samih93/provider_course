@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:provider_learning/providers/student_provider.dart';
 import 'package:provider_learning/screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider<StudentProvider>(create: (_) => StudentProvider()),
+  ], child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
